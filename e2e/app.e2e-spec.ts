@@ -1,14 +1,14 @@
-import { MsRecipeBookPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('ms-recipe-book App', function() {
-  let page: MsRecipeBookPage;
+describe('ms-recipe-book App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new MsRecipeBookPage();
+    page = new AppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('rb works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
